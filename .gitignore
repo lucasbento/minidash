@@ -1,0 +1,12 @@
+# build
+dist
+
+# packages
+node_modules
+yarn-error.log
+
+# Log folder
+logs
+
+# mac
+.DS_Store

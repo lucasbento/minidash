@@ -1,0 +1,101 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`createServerStatusChart should create server status chart 1`] = `
+Array [
+  Array [
+    6,
+    3.95,
+    1.3,
+    2.15,
+    undefined,
+    Object {
+      "border": Object {
+        "type": "line",
+      },
+      "content": "
+{center}{bold}{green-fg}UP!{/green-fg}{/bold}{/center}",
+      "label": "Server status",
+      "style": Object {
+        "baseline": "white",
+        "fg": "blue",
+      },
+      "tags": true,
+    },
+  ],
+]
+`;
+
+exports[`createServerStatusChart should create server status chart with status of \`UNREACHABLE\` 1`] = `
+Array [
+  Array [
+    6,
+    3.95,
+    1.3,
+    2.15,
+    undefined,
+    Object {
+      "border": Object {
+        "type": "line",
+      },
+      "content": "
+{center}{bold}{red-fg}UNREACHABLE!{/red-fg}{/bold}{/center}",
+      "label": "Server status",
+      "style": Object {
+        "baseline": "white",
+        "fg": "blue",
+      },
+      "tags": true,
+    },
+  ],
+]
+`;
+
+exports[`createServerStatusChart should create server status chart with status of \`UNREACHABLE\` if there are 5 logs with FAILED \`responseType\` 1`] = `
+Array [
+  Array [
+    6,
+    3.95,
+    1.3,
+    2.15,
+    undefined,
+    Object {
+      "border": Object {
+        "type": "line",
+      },
+      "content": "
+{center}{bold}{red-fg}UNREACHABLE!{/red-fg}{/bold}{/center}",
+      "label": "Server status",
+      "style": Object {
+        "baseline": "white",
+        "fg": "blue",
+      },
+      "tags": true,
+    },
+  ],
+]
+`;
+
+exports[`createServerStatusChart should create server status chart with status of \`UP\` if there are less than 5 logs with FAILED \`responseType\` 1`] = `
+Array [
+  Array [
+    6,
+    3.95,
+    1.3,
+    2.15,
+    undefined,
+    Object {
+      "border": Object {
+        "type": "line",
+      },
+      "content": "
+{center}{bold}{green-fg}UP!{/green-fg}{/bold}{/center}",
+      "label": "Server status",
+      "style": Object {
+        "baseline": "white",
+        "fg": "blue",
+      },
+      "tags": true,
+    },
+  ],
+]
+`;
